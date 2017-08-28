@@ -27,7 +27,12 @@ class Tests(unittest.TestCase):
         self.autoDriver.click("xpath|"+getCellValue(0, 9, 2, excel_path))
         logger.info('查询出符合条件的记录！数据校验中...')
 		#logger.info('断言后续添加，暂无时间去弄...')
-        time.sleep(5)
+        #try:
+        #    self.assertEqual(u"预期结果", self.autoDriver.title)
+        #except AssertionError as e:
+        #    print(u"不一致")
+        #    logger.info('数据不一致，测试失败。')
+    time.sleep(5)
 
     def test_2Rest(self):
         self.autoDriver.click("xpath|"+getCellValue(0, 4, 2, excel_path))
