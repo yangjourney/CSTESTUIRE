@@ -36,8 +36,8 @@ class ExcelUtil(object):
         workBook = xlrd.open_workbook(xlsFilePath)
         table = workBook.sheets()[self]
         return table.cell(rowIndex, colIndex).value
-if __name__=='__main__':
-    excel_path = os.path.abspath("D:/CSTESTUIRE/Data/Data.xls")
+#if __name__=='__main__':
+#    excel_path = os.path.abspath("D:/CSTESTUIRE/Data/Data.xls")
 # 获取对应Excel文件中对应的Sheet，在测试编码过程中进行调整
     #excel = ExcelUtil(excel_path, 'Sheet2')
-    print(ExcelUtil.getCellValue(0, 4, 2, excel_path)) # 获取第一个sheet第四行第二列的单元格的值
+#    print(ExcelUtil.getCellValue(0, 4, 2, excel_path)) # 获取第一个sheet第四行第二列的单元格的值

@@ -28,9 +28,9 @@ class Tests(unittest.TestCase):
         logger.info('查询出符合条件的记录！数据校验中...')
 		#logger.info('断言后续添加，暂无时间去弄...')
         #try:
-        #    self.assertEqual(u"预期结果", self.autoDriver.title)
+        #    self.assertEqual("预期结果", self.autoDriver.title)
         #except AssertionError as e:
-        #    print(u"不一致")
+        #    print("不一致")
         #    logger.info('数据不一致，测试失败。')
     time.sleep(5)
 
